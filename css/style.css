@@ -2,6 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Share+Tech+Mono&family=VT323&display=swap');
 
+body {
+    background-image: url(../img/city.png);
+}
+
 .header {
     z-index: 2;
     position: static;
@@ -22,7 +26,7 @@
 }
 .header a {
     text-decoration: none;
-    color: #ffd800;
+    color: #ffca5f;
 }
 
 .header ul{
@@ -34,21 +38,26 @@
 }
 
 .header li {
+    color: lightblue;
     border: solid #040509;
     display: inline-flex;
     margin: 0 10px;
     padding: 5px ;
     border-radius: 20px;
     white-space: nowrap;
-    /*font-family: 'VT323', monospace;*/
-    font-family: 'Share Tech Mono', monospace;
-    font-size: 19px;
+    font-family: 'VT323', monospace;
+    /*font-family: 'Share Tech Mono', monospace;*/
+    font-size: 24px;
+    font-weight: bold;
     text-align: center;
     align-items: center;
+    transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .header li:hover {
-    border: solid #b0b2bf;
+    background-color: #ffca5f;
+    color: #040509;
+    transform: scale(1.1);
 }
 
 .header span {
@@ -67,7 +76,7 @@
         margin: 0 0;
     }
     .header li {
-        font-size: 14px;
+        font-size: 21px;
         padding: 0;
     }
     .header h3 {
