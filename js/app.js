@@ -1,3 +1,13 @@
+let prevTitle = document.title;
+window.addEventListener('blur', () => {
+    prevTitle = document.title;
+    document.title = '¡Oye, por qué te vas! ¡Vuelve!';
+})
+window.addEventListener('focus', () => {
+    document.title = prevTitle;
+})
+
+
 const my_name = document.getElementById('name');
 const hi = document.getElementById('hi');
 let currentIndexs = 0;
