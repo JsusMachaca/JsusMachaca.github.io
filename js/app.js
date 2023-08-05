@@ -3,7 +3,7 @@ const hi = document.getElementById('hi');
 let currentIndexs = 0;
 
 function setName() {
-    const names = ["Soy <br> Jesus<span class='print'>&lt;/<span class='br'>h1</span>&gt;</span>", "Soy <br> Programador <br> Full <br> Stack<span class='print'>&lt;/<span class='br'>h1</span>&gt;</span>"];
+    const names = ["Soy <br> Jesus<br> Machaca<span class='print'>&lt;<span class='br'>br</span>&gt;</span>", "Soy <br> Full <br> Stack <br> Developer<span class='print'>&lt;<span class='br'>br</span>&gt;</span>"];
     my_name.innerHTML = names[currentIndexs];
     currentIndexs = (currentIndexs + 1) % names.length;
 }
