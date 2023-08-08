@@ -10,7 +10,7 @@
     transform: translate(-50%);
     justify-content: center;
     align-items: center;
-    width: 75%;
+    width: 77%;
     height: 87%;
     margin-top: 15px;
     z-index: -1;
@@ -282,7 +282,7 @@
     position: absolute;
     left: 12%; /*original 50%*/
     /*transform: translate(50%);*/
-    width: 75%;
+    width: 77%;
     height: 87%;
     margin-top: 15px;
     z-index: -1;
@@ -293,6 +293,10 @@
     overflow-y: auto;
     box-shadow: 1px 1px #fff, 3px 3px #fff, 5px 5px #fff, 7px 7px #fff, 8px 8px #fff, 9px 9px #fff, 10px 10px #fff, 11px 11px #fff;
     animation: floating 2s infinite alternate;
+}
+
+.more-info::-webkit-scrollbar {
+    width: 10px;
 }
 
 .about {

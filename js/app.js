@@ -58,3 +58,19 @@ function showDisplays() {
 
 }
 showDisplays()
+
+const mouseAura = document.getElementById('mouse-aura');
+
+document.addEventListener('mousemove', (e) => {
+  const x = e.clientX;
+  const y = e.clientY;
+
+  mouseAura.style.left = x + 'px';
+  mouseAura.style.top = y + 'px';
+
+  mouseAura.style.opacity = '1';
+});
+
+document.addEventListener('mouseleave', () => {
+  mouseAura.style.opacity = '0';
+});
