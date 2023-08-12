@@ -1,7 +1,7 @@
 let prevTitle = document.title;
 window.addEventListener('blur', () => {
     prevTitle = document.title;
-    document.title = '¡Oye, por qué te vas! ¡Vuelve!';
+    document.title = '¡Oye, por qué te vas! ¡Vuelve! 🙁';
 })
 window.addEventListener('focus', () => {
     document.title = prevTitle;
