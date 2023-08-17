@@ -1,3 +1,6 @@
+const music = document.getElementById('music');
+music.volume = 0.02;
+
 let prevTitle = document.title;
 window.addEventListener('blur', () => {
     prevTitle = document.title;
